@@ -81,7 +81,7 @@ SYNTHESIZE_ASC_OBJ(__retryDelayCalcBlock, setRetryDelayCalcBlock);
     }
     taskDict[@"retriesRemainingCount"] = [NSNumber numberWithInt:retriesRemaining];
     NSMutableDictionary *newDict = [NSMutableDictionary dictionaryWithDictionary:self.tasksDict];
-    newDict[task] = taskDict;
+    newDict[taskcreatorCopy] = taskDict;
     self.tasksDict = newDict;
     return task;
 }
